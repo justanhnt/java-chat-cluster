@@ -1,0 +1,26 @@
+spring:
+  session:
+    store-type: redis  
+  thymeleaf:
+    cache: false
+  messages:
+    cache-seconds: 0
+  redis:
+    host: localhost
+    port: 6379
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/chat-system
+    redis:
+      repositories:
+        enabled: true
+
+flyway.enabled: true      
+security.headers.cache: false 
+server.session.timeout: 600
+
+ebook:
+  chat:
+    relay:
+      host: localhost
+      port: 61613
