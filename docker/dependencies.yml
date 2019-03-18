@@ -1,11 +1,11 @@
-version: '1'
+version: '2'
 services:
   redis:
     image: "redis:4"
     ports:
       - "6379:6379"
   mongodb:
-    image: "mongodb:3.6"
+    image: "mongo:latest"
     ports:
       - "27017:27017"
   rabbitmq-stomp:
